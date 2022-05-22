@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  database:
+    image: postgres:11.15-alpine
+    environment:
+      POSTGRES_PASSWORD: wora
+      POSTGRES_USER: postgres
+      POSTGRES_DB: url_shortener_db
+    ports:
+      - 5432:5432
